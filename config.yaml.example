@@ -1,0 +1,41 @@
+# Private Planner Configuration
+# This is an example configuration file for the Private Planner
+
+# Data source configuration
+data_source:
+  # Type of data source: local, remote, database, etc.
+  type: "local"
+  
+  # Path to data directory (for local type)
+  path: "./data"
+  
+  # For remote data sources (uncomment and configure as needed)
+  # url: "https://api.example.com/planner-data"
+  # auth:
+  #   type: "token"
+  #   token: "your-api-token"
+
+# Planner settings
+planner:
+  # Enable AI-assisted suggestions
+  ai_enabled: true
+  
+  # Maximum number of suggestions to return
+  suggestion_limit: 5
+  
+  # Default export format
+  default_export_format: "json"
+
+# Experience defaults
+experience_defaults:
+  # Default tags to suggest
+  suggested_tags:
+    - "outdoor"
+    - "indoor"
+    - "social"
+    - "solo"
+    - "active"
+    - "relaxing"
+  
+  # Default duration units (minutes)
+  duration_unit: "minutes"
